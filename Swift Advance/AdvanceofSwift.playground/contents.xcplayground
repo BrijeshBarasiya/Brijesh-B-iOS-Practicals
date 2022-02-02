@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Class'/>
+        <page name='Closures'/>
+        <page name='EnumClassAndStructures'/>
+        <page name='Function'/>
+        <page name='Structure'/>
+        <page name='Enumerations'/>
+        <page name='PropertiesSubscriptsMethodsInheritance'/>
+        <page name='ErrorHandling'/>
+        <page name='Extensions'/>
+        <page name='OtherDemo'/>
+    </pages>
+</playground>

@@ -77,4 +77,3 @@ class Manager: ResultDelegate {
 }
 var obj = Manager(developer: Developer())
 obj.makeAddition(value1: 25, value2: 20)
-

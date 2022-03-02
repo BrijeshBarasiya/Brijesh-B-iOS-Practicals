@@ -11,6 +11,6 @@
         <page name='ErrorHandling'/>
         <page name='Extensions'/>
         <page name='OtherDemo'/>
-        <page name='DelegationProtocol'/>
+        <page name='DelegateProtocol'/>
     </pages>
 </playground>

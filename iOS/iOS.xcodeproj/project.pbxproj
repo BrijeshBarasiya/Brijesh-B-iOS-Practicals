@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8784F8E27CF79E800AF330D /* UIWidgets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8784F8D27CF79E800AF330D /* UIWidgets.storyboard */; };
 		A8FFE5CF27C5530A0026A197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */; };
 		A8FFE5D127C5530A0026A197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */; };
 		A8FFE5D327C5530A0026A197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5D227C5530A0026A197 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8784F8D27CF79E800AF330D /* UIWidgets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIWidgets.storyboard; sourceTree = "<group>"; };
 		A8FFE5CB27C5530A0026A197 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A8FFE5D727C5530B0026A197 /* Assets.xcassets */,
 				A8FFE5D927C5530B0026A197 /* LaunchScreen.storyboard */,
 				A8FFE5DC27C5530B0026A197 /* Info.plist */,
+				A8784F8D27CF79E800AF330D /* UIWidgets.storyboard */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8784F8E27CF79E800AF330D /* UIWidgets.storyboard in Resources */,
 				A8FFE5DB27C5530B0026A197 /* LaunchScreen.storyboard in Resources */,
 				A8FFE5D827C5530B0026A197 /* Assets.xcassets in Resources */,
 				A8FFE5D627C5530A0026A197 /* Main.storyboard in Resources */,

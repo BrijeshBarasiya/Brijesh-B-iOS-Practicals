@@ -5,6 +5,7 @@ class TableViewClass: ViewController {
     // MARK: IBOutlet
     @IBOutlet weak var countryNames: UITableView!
     
+
     // MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,11 +14,16 @@ class TableViewClass: ViewController {
         countryNames.rowHeight = view.frame.height * 0.1
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinationVC = segue.destination as? MapClass, let details = sender as? CountryData else { return }
+        destinationVC.details = details
+    }
+    
 }
 
 // MARK: extension UITableViewDelegate
 extension TableViewClass: UITableViewDelegate {
-
+    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let header = view as? UITableViewHeaderFooterView {
             header.textLabel?.textColor = UIColor.red
@@ -25,6 +31,11 @@ extension TableViewClass: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let details = DataClass.countryData[indexPath.section].countryNames[indexPath.row]
+        performSegue(withIdentifier: "pinInMap", sender: details)
+    }
+
 }
 
 // MARK: extension UITableViewDataSource

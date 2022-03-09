@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8784F8E27CF79E800AF330D /* UIWidgets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8784F8D27CF79E800AF330D /* UIWidgets.storyboard */; };
+		A80647A427D71E52007BD792 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80647A327D71E52007BD792 /* DataClass.swift */; };
+		A869AB5727D6009800CDA029 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869AB5627D6009800CDA029 /* TableView.swift */; };
+		A869AB5F27D63C1900CDA029 /* UITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869AB5E27D63C1900CDA029 /* UITableCell.swift */; };
+		A8784F8E27CF79E800AF330D /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8784F8D27CF79E800AF330D /* UIComponents.storyboard */; };
+		A89754E227D09CF9001ABB33 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89754E127D09CF9001ABB33 /* UIComponents.swift */; };
+		A8EE0ACB27D1CE3200FAE34E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */; };
 		A8FFE5CF27C5530A0026A197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */; };
 		A8FFE5D127C5530A0026A197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */; };
 		A8FFE5D327C5530A0026A197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5D227C5530A0026A197 /* ViewController.swift */; };
@@ -37,7 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A8784F8D27CF79E800AF330D /* UIWidgets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIWidgets.storyboard; sourceTree = "<group>"; };
+		A80647A327D71E52007BD792 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
+		A869AB5627D6009800CDA029 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		A869AB5E27D63C1900CDA029 /* UITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableCell.swift; sourceTree = "<group>"; };
+		A8784F8D27CF79E800AF330D /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
+		A89754E127D09CF9001ABB33 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		A8FFE5CB27C5530A0026A197 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A80647A527D725F3007BD792 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A869AB5E27D63C1900CDA029 /* UITableCell.swift */,
+				A869AB5627D6009800CDA029 /* TableView.swift */,
+			);
+			name = TableView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A80647A627D72616007BD792 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				A80647A527D725F3007BD792 /* TableView */,
+				A8784F8D27CF79E800AF330D /* UIComponents.storyboard */,
+				A89754E127D09CF9001ABB33 /* UIComponents.swift */,
+				A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		A80647A727D72D86007BD792 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */,
+				A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */,
+				A8FFE5D227C5530A0026A197 /* ViewController.swift */,
+				A8FFE5D427C5530A0026A197 /* Main.storyboard */,
+				A8FFE5D727C5530B0026A197 /* Assets.xcassets */,
+				A8FFE5D927C5530B0026A197 /* LaunchScreen.storyboard */,
+				A8FFE5DC27C5530B0026A197 /* Info.plist */,
+			);
+			name = AppFiles;
+			sourceTree = "<group>";
+		};
 		A8FFE5C227C5530A0026A197 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +146,9 @@
 		A8FFE5CD27C5530A0026A197 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */,
-				A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */,
-				A8FFE5D227C5530A0026A197 /* ViewController.swift */,
-				A8FFE5D427C5530A0026A197 /* Main.storyboard */,
-				A8FFE5D727C5530B0026A197 /* Assets.xcassets */,
-				A8FFE5D927C5530B0026A197 /* LaunchScreen.storyboard */,
-				A8FFE5DC27C5530B0026A197 /* Info.plist */,
-				A8784F8D27CF79E800AF330D /* UIWidgets.storyboard */,
+				A80647A727D72D86007BD792 /* AppFiles */,
+				A80647A627D72616007BD792 /* UIComponent */,
+				A80647A327D71E52007BD792 /* DataClass.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -234,7 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8784F8E27CF79E800AF330D /* UIWidgets.storyboard in Resources */,
+				A8784F8E27CF79E800AF330D /* UIComponents.storyboard in Resources */,
 				A8FFE5DB27C5530B0026A197 /* LaunchScreen.storyboard in Resources */,
 				A8FFE5D827C5530B0026A197 /* Assets.xcassets in Resources */,
 				A8FFE5D627C5530A0026A197 /* Main.storyboard in Resources */,
@@ -262,7 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EE0ACB27D1CE3200FAE34E /* SignUpScreen.swift in Sources */,
+				A869AB5727D6009800CDA029 /* TableView.swift in Sources */,
+				A80647A427D71E52007BD792 /* DataClass.swift in Sources */,
+				A869AB5F27D63C1900CDA029 /* UITableCell.swift in Sources */,
 				A8FFE5D327C5530A0026A197 /* ViewController.swift in Sources */,
+				A89754E227D09CF9001ABB33 /* UIComponents.swift in Sources */,
 				A8FFE5CF27C5530A0026A197 /* AppDelegate.swift in Sources */,
 				A8FFE5D127C5530A0026A197 /* SceneDelegate.swift in Sources */,
 			);

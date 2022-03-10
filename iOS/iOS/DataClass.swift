@@ -57,8 +57,8 @@ class DataClass {
         )
     ]
     
-    static var countryNames = ["India", "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Argentina", "Australia", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize"]
-    
+    static var continentsName = ["Asia", "Africa", "Europe", "North America", "South America", "Australia", "Antarctica"]
+
 }
 
 struct CountryData {

@@ -7,15 +7,16 @@ class Practical1: UIPageViewController, UIPageViewControllerDataSource {
                                             self.addViewController(name: "signUpScreen")
     ]
     
-    // MARK: Viewdidload
+    // MARK: override Function
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "View Controller"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
         if let screen = screens.first {
-            setViewControllers([screen],
-                               direction: .forward,
-                               animated: true,
-                               completion: nil
+            setViewControllers([screen], direction: .forward, animated: true, completion: nil
             )
         }
     }

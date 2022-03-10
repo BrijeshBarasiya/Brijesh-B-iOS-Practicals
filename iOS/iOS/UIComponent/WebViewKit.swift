@@ -10,6 +10,10 @@ class WebViewKit: UIViewController {
     @IBOutlet weak var htmlWebView: WKWebView!
 
     // MARK: override Methods
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "Webview"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         serachBar.delegate = self

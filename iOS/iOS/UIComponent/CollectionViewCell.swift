@@ -1,40 +1,22 @@
 import UIKit
 class CollectionViewCell: UICollectionViewCell {
 
-    // MARK: IBOutlet
+    // MARK: IBOutlet of CollectionViewCell
+    @IBOutlet weak var countryFlag: UIImageView!
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var countryName: UILabel!
     
-    // MARK: override Methodes
+    // MARK: override Methodes of CollectionViewCell
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    // MARK: Functions
-    func configureCellValue(name: String, tag: Int){
-        self.countryName.text = name
-        self.deleteButton.tag = tag
-    }
-    
-}
-
-class TableViewCell: UITableViewCell {
-
-    // MARK: IBOutlet
-    @IBOutlet weak var countryName: UILabel!
-    
-    // MARK: override Methodes
-    override class func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    // MARK: Functions
-    func configureCellValue(name: String){
-        self.countryName.text = name
+    // MARK: Functions of CollectionViewCell
+    func configureCellValue(name: String, row: Int, section: Int, imageName: String){
+        self.countryName.text = name.uppercased()
+        self.countryFlag.image = UIImage(named: imageName)
+        self.deleteButton.tag = row
+        self.deleteButton.titleLabel?.text = String(section)
     }
     
 }

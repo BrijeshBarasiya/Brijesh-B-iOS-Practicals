@@ -11,9 +11,14 @@
 		A80647A427D71E52007BD792 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80647A327D71E52007BD792 /* DataClass.swift */; };
 		A80647A927D73905007BD792 /* MapClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80647A827D73905007BD792 /* MapClass.swift */; };
 		A80647AB27D776E8007BD792 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80647AA27D776E8007BD792 /* Stepper.swift */; };
+		A80A77F327DB305300BBB9FD /* WebViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A77F227DB305300BBB9FD /* WebViewKit.swift */; };
+		A83F73EB27DF009E0055F05B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F73EA27DF009E0055F05B /* TableViewCell.swift */; };
+		A83F73ED27DF00D00055F05B /* CollectionViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F73EC27DF00D00055F05B /* CollectionViewHeaderCell.swift */; };
+		A85016E927DA0DCD0020ED53 /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85016E827DA0DCD0020ED53 /* Pickers.swift */; };
 		A855C16F27D8857D008C33E1 /* CollectonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A855C16E27D8857D008C33E1 /* CollectonView.swift */; };
-		A869AB5727D6009800CDA029 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869AB5627D6009800CDA029 /* TableView.swift */; };
-		A869AB5F27D63C1900CDA029 /* UITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869AB5E27D63C1900CDA029 /* UITableCell.swift */; };
+		A857543527DB485C008F073D /* demoPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A857543427DB485C008F073D /* demoPDF.pdf */; };
+		A857543927DB4BA0008F073D /* demoHTML.html in Resources */ = {isa = PBXBuildFile; fileRef = A857543827DB4BA0008F073D /* demoHTML.html */; };
+		A857543E27DB4C1D008F073D /* W3.CSS Template_files in Resources */ = {isa = PBXBuildFile; fileRef = A857543D27DB4C1D008F073D /* W3.CSS Template_files */; };
 		A8784F8E27CF79E800AF330D /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8784F8D27CF79E800AF330D /* UIComponents.storyboard */; };
 		A89754E227D09CF9001ABB33 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89754E127D09CF9001ABB33 /* UIComponents.swift */; };
 		A8EE0ACB27D1CE3200FAE34E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */; };
@@ -50,9 +55,14 @@
 		A80647A327D71E52007BD792 /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		A80647A827D73905007BD792 /* MapClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapClass.swift; sourceTree = "<group>"; };
 		A80647AA27D776E8007BD792 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		A80A77F227DB305300BBB9FD /* WebViewKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewKit.swift; sourceTree = "<group>"; };
+		A83F73EA27DF009E0055F05B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A83F73EC27DF00D00055F05B /* CollectionViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeaderCell.swift; sourceTree = "<group>"; };
+		A85016E827DA0DCD0020ED53 /* Pickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
 		A855C16E27D8857D008C33E1 /* CollectonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectonView.swift; sourceTree = "<group>"; };
-		A869AB5627D6009800CDA029 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		A869AB5E27D63C1900CDA029 /* UITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableCell.swift; sourceTree = "<group>"; };
+		A857543427DB485C008F073D /* demoPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = demoPDF.pdf; sourceTree = "<group>"; };
+		A857543827DB4BA0008F073D /* demoHTML.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demoHTML.html; sourceTree = "<group>"; };
+		A857543D27DB4C1D008F073D /* W3.CSS Template_files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "W3.CSS Template_files"; sourceTree = "<group>"; };
 		A8784F8D27CF79E800AF330D /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
 		A89754E127D09CF9001ABB33 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
 		A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
@@ -101,30 +111,23 @@
 			children = (
 				A855C16E27D8857D008C33E1 /* CollectonView.swift */,
 				A804933427D8D3EC0005B922 /* CollectionViewCell.swift */,
+				A83F73EA27DF009E0055F05B /* TableViewCell.swift */,
+				A83F73EC27DF00D00055F05B /* CollectionViewHeaderCell.swift */,
 			);
 			name = CollectionView;
-			sourceTree = "<group>";
-		};
-		A80647A527D725F3007BD792 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				A869AB5E27D63C1900CDA029 /* UITableCell.swift */,
-				A869AB5627D6009800CDA029 /* TableView.swift */,
-			);
-			name = TableView;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		A80647A627D72616007BD792 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
 				A804933327D8D3900005B922 /* CollectionView */,
-				A80647A527D725F3007BD792 /* TableView */,
 				A8784F8D27CF79E800AF330D /* UIComponents.storyboard */,
 				A89754E127D09CF9001ABB33 /* UIComponents.swift */,
 				A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */,
 				A80647A827D73905007BD792 /* MapClass.swift */,
 				A80647AA27D776E8007BD792 /* Stepper.swift */,
+				A85016E827DA0DCD0020ED53 /* Pickers.swift */,
+				A80A77F227DB305300BBB9FD /* WebViewKit.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 		A80647A727D72D86007BD792 /* AppFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A857543C27DB4BEE008F073D /* demoFiles */,
 				A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */,
 				A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */,
 				A8FFE5D227C5530A0026A197 /* ViewController.swift */,
@@ -141,6 +145,16 @@
 				A8FFE5DC27C5530B0026A197 /* Info.plist */,
 			);
 			name = AppFiles;
+			sourceTree = "<group>";
+		};
+		A857543C27DB4BEE008F073D /* demoFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A857543D27DB4C1D008F073D /* W3.CSS Template_files */,
+				A857543427DB485C008F073D /* demoPDF.pdf */,
+				A857543827DB4BA0008F073D /* demoHTML.html */,
+			);
+			path = demoFiles;
 			sourceTree = "<group>";
 		};
 		A8FFE5C227C5530A0026A197 = {
@@ -296,6 +310,9 @@
 			files = (
 				A8784F8E27CF79E800AF330D /* UIComponents.storyboard in Resources */,
 				A8FFE5DB27C5530B0026A197 /* LaunchScreen.storyboard in Resources */,
+				A857543927DB4BA0008F073D /* demoHTML.html in Resources */,
+				A857543E27DB4C1D008F073D /* W3.CSS Template_files in Resources */,
+				A857543527DB485C008F073D /* demoPDF.pdf in Resources */,
 				A8FFE5D827C5530B0026A197 /* Assets.xcassets in Resources */,
 				A8FFE5D627C5530A0026A197 /* Main.storyboard in Resources */,
 			);
@@ -322,12 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83F73EB27DF009E0055F05B /* TableViewCell.swift in Sources */,
 				A8EE0ACB27D1CE3200FAE34E /* SignUpScreen.swift in Sources */,
-				A869AB5727D6009800CDA029 /* TableView.swift in Sources */,
 				A804933527D8D3EC0005B922 /* CollectionViewCell.swift in Sources */,
+				A83F73ED27DF00D00055F05B /* CollectionViewHeaderCell.swift in Sources */,
 				A855C16F27D8857D008C33E1 /* CollectonView.swift in Sources */,
 				A80647A427D71E52007BD792 /* DataClass.swift in Sources */,
-				A869AB5F27D63C1900CDA029 /* UITableCell.swift in Sources */,
+				A85016E927DA0DCD0020ED53 /* Pickers.swift in Sources */,
+				A80A77F327DB305300BBB9FD /* WebViewKit.swift in Sources */,
 				A80647A927D73905007BD792 /* MapClass.swift in Sources */,
 				A8FFE5D327C5530A0026A197 /* ViewController.swift in Sources */,
 				A89754E227D09CF9001ABB33 /* UIComponents.swift in Sources */,

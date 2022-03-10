@@ -111,7 +111,6 @@ class SignUpScreen: UIViewController {
     }
     
     // MARK: Other Function
-        
     func showEmptyError(sender: AnyObject) {
         sender.layer.borderWidth = 2
         sender.layer.borderColor = UIColor.red.cgColor
@@ -153,7 +152,7 @@ extension SignUpScreen: UINavigationControllerDelegate, UIImagePickerControllerD
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-    
+
 }
 
 // MARK: UITextFieldDelegate

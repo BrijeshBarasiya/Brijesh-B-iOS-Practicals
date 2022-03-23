@@ -61,7 +61,7 @@ class DataClass {
     
 }
 
-class CountryData {
+struct CountryData {
 
     var countryName: String
     var countryFlag: String
@@ -78,7 +78,7 @@ class CountryData {
     
 }
 
-class Continents {
+struct Continents {
     
     var continent: String
     var countryNames: [CountryData]

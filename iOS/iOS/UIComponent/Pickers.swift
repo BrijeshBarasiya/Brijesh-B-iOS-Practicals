@@ -16,6 +16,10 @@ class Pickers: UIViewController {
     let dateFormetter = DateFormatter()
     
     // MARK: override Methods
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "Pickers"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         componentView.isHidden = true
@@ -65,18 +69,18 @@ class Pickers: UIViewController {
         }
         selectDate.text = dateFormetter.string(from: manualDatePicker.date)
     }
-    
+
 }
 
 // MARK: extension UIPickerViewDataSource
 extension Pickers: UIPickerViewDataSource {
-    
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return DataClass.countryNames.count
+        return DataClass.continentsName.count
     }
     
 }
@@ -85,11 +89,11 @@ extension Pickers: UIPickerViewDataSource {
 extension Pickers: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        pickerViewValue.text = DataClass.countryNames[row]
+        pickerViewValue.text = DataClass.continentsName[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return DataClass.countryNames[row]
+        return DataClass.continentsName[row]
     }
     
 }

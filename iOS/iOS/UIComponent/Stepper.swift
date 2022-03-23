@@ -7,6 +7,10 @@ class Stepper: UIViewController {
     var size: CGFloat = 50
     
     // MARK: override Methods
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "Stepper"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.frame = CGRect(x: 0, y: 0, width: size, height: size)

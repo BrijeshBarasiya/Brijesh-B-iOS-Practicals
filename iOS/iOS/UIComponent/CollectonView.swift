@@ -1,20 +1,26 @@
 import UIKit
 
+// MARK: Protocol
+protocol UpdateRawData: AnyObject {
+    func updateData(updated: [Continents])
+}
+
 class CollectionView: UIViewController {
 
     // MARK: IBOutlet
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var enterCountryName: UITextField!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var contintentIndex: UITextField!
     @IBOutlet weak var serachBarForCountry: UISearchBar!
     
     // MARK: Variables
     var rawData: [Continents] = DataClass.countryData
 
-    
     // MARK: override Methods
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "Collection View"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -45,10 +51,19 @@ class CollectionView: UIViewController {
     }
 
     // MARK: IBActions
+    @IBAction func onAddClicked(_ sender: UIButton) {
+        guard let addNewCountry = storyboard?.instantiateViewController(withIdentifier: "addNewCountry") as? AddCountryDetails else {
+            return
+        }
+        addNewCountry.delegates = self
+        addNewCountry.modalTransitionStyle = .flipHorizontal
+        self.navigationController?.present(addNewCountry, animated: true, completion: nil)
+    }
+    
     @IBAction func onDeleteClicked(_ sender: UIButton) {
         let section = Int(sender.titleLabel?.text ?? "0") ?? 0
-        rawData[section].countryNames.remove(at: sender.tag)
-        DataClass.countryData = rawData
+        DataClass.countryData[section].countryNames.remove(at: sender.tag)
+        rawData = DataClass.countryData
         pullIt()
     }
     
@@ -67,16 +82,6 @@ class CollectionView: UIViewController {
         }
     }
     
-    @IBAction func addOnClicked(_ sender: UIButton) {
-        let name = String(enterCountryName.text ?? "India")
-        let index = Int(String(contintentIndex.text ?? "0")) ?? 0
-        let newData = CountryData(countryName: name, countryFlag: "indiaFlag", latitude: 28.6139, longitude: 77.2090)
-        rawData[index].countryNames.append(newData)
-        DataClass.countryData = rawData
-        enterCountryName.text = ""
-        contintentIndex.text = ""
-    }
-    
 }
 
 // MARK: extension UITableViewDelegate
@@ -84,8 +89,8 @@ extension CollectionView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            rawData[indexPath.section].countryNames.remove(at: indexPath.row)
-            DataClass.countryData = rawData
+            DataClass.countryData[indexPath.section].countryNames.remove(at: indexPath.row)
+            rawData = DataClass.countryData
             tableView.deleteRows(at: [indexPath], with: .fade)
             pullIt()
         }
@@ -103,7 +108,7 @@ extension CollectionView: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let details = rawData[indexPath.section].countryNames[indexPath.row]
+        let details = DataClass.countryData[indexPath.section].countryNames[indexPath.row]
         performSegue(withIdentifier: "pinInMap", sender: details)
     }
     
@@ -117,22 +122,22 @@ extension CollectionView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return rawData[section].continent
+        return DataClass.countryData[section].continent
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return rawData.count
+        return DataClass.countryData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rawData[section].countryNames.count
+        return DataClass.countryData[section].countryNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "refreshCell", for: indexPath) as? TableViewCell else {
             return UITableViewCell()
         }
-        let data = rawData[indexPath.section].countryNames[indexPath.row]
+        let data = DataClass.countryData[indexPath.section].countryNames[indexPath.row]
         cell.configureCellValue(name: data.countryName, imageName: data.countryFlag)
         return cell
     }
@@ -160,29 +165,29 @@ extension CollectionView: UICollectionViewDataSource {
         guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "collectionViewHeader", for: indexPath) as? CollectionViewHeaderCell else {
             return UICollectionReusableView()
         }
-        header.configureCellValue(name: rawData[indexPath.section].continent, tag: indexPath.section)
+        header.configureCellValue(name: DataClass.countryData[indexPath.section].continent, tag: indexPath.section)
         return header
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return rawData.count
+        return DataClass.countryData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return rawData[section].countryNames.count
+        return DataClass.countryData[section].countryNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as? CollectionViewCell else {
             return UICollectionViewCell()
         }
-        let data = rawData[indexPath.section].countryNames[indexPath.row]
+        let data = DataClass.countryData[indexPath.section].countryNames[indexPath.row]
         cell.configureCellValue(name: data.countryName, row: indexPath.row, section: indexPath.section, imageName: data.countryFlag)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let details = rawData[indexPath.section].countryNames[indexPath.row]
+        let details = DataClass.countryData[indexPath.section].countryNames[indexPath.row]
         performSegue(withIdentifier: "pinInMap", sender: details)
     }
     
@@ -192,22 +197,31 @@ extension CollectionView: UICollectionViewDataSource {
 extension CollectionView: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        rawData = DataClass.countryData
+        DataClass.countryData = rawData
         var indexToDelete: [Int] = []
         if searchText != "" {
-            for index in 0..<rawData.count {
-                rawData[index].countryNames = rawData[index].countryNames.filter{($0.countryName.uppercased().contains(searchText.uppercased()))}
-                if rawData[index].countryNames.isEmpty {
+            for index in 0..<DataClass.countryData.count {
+                DataClass.countryData[index].countryNames = DataClass.countryData[index].countryNames.filter{($0.countryName.uppercased().contains(searchText.uppercased()))}
+                if DataClass.countryData[index].countryNames.isEmpty {
                     indexToDelete.append(index)
                 }
             }
             for index in stride(from: indexToDelete.count, to: 0, by: -1) {
-                rawData.remove(at: indexToDelete[index - 1])
+                DataClass.countryData.remove(at: indexToDelete[index - 1])
             }
             pullIt()
         } else {
             pullIt()
         }
+    }
+    
+}
+
+// MARK: extension UpdateRawData
+extension CollectionView: UpdateRawData {
+    
+    func updateData(updated: [Continents]) {
+        rawData = updated
     }
     
 }

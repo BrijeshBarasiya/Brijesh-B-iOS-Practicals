@@ -39,5 +39,10 @@ class NavigationControllerCoordinator: Coordinator {
         navController.popToRootViewController(animated: false)
         UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
     }
+    
+    func openWebServiceCoordinator() {
+        let firstScreen = WebServicesCoordinator(navController)
+        firstScreen.start()
+    }
 
 }

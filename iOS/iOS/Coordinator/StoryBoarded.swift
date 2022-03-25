@@ -4,6 +4,7 @@ import UIKit
 enum Storyboard: String {
     case main = "Main"
     case uiNavigaiton = "UINavigationController"
+    case webServices = "WebServices"
 }
 
 /// Storyboarded

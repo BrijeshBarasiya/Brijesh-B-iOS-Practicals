@@ -23,4 +23,9 @@ class ViewController: UIViewController {
     @IBAction func onNavigationButtonClicked(_ sender: UIButton) {
         navCoordinator?.openNavigationViewController()
     }
+    
+    @IBAction func onWebServicesClicked(_ sender: UIButton) {
+        navCoordinator?.openWebServiceCoordinator()
+    }
+    
 }

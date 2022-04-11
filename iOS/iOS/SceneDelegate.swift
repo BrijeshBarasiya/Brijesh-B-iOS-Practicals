@@ -6,8 +6,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         print("SceneDelegate: willConnectTo(scene)")
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        //window = UIWindow(windowScene: windowScene)
+        guard let _ = (scene as? UIWindowScene) else { return }
         let navController = UINavigationController()
         let appCoordinator = AppCoordinator(navController)
         appCoordinator.start()

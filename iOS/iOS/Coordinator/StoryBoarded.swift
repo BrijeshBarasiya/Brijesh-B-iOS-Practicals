@@ -5,6 +5,9 @@ enum Storyboard: String {
     case main = "Main"
     case uiNavigaiton = "UINavigationController"
     case webServices = "WebServices"
+    case architecture = "Architecture"
+    case mvcArchitecture = "MVCArchitecture"
+    case mvpArchitecture = "MVPArchitecture"
 }
 
 /// Storyboarded

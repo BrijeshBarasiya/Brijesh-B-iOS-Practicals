@@ -28,4 +28,7 @@ class ViewController: UIViewController {
         navCoordinator?.openWebServiceCoordinator()
     }
     
+    @IBAction func onArchitectureClicked(_ sender: UIButton) {
+        navCoordinator?.openArchitectureCoordinator()
+    }
 }

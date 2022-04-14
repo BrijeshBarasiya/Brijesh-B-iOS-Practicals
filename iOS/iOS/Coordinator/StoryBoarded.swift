@@ -8,6 +8,8 @@ enum Storyboard: String {
     case architecture = "Architecture"
     case mvcArchitecture = "MVCArchitecture"
     case mvpArchitecture = "MVPArchitecture"
+    case mvvmArchitecture = "MvvmArchitecture"
+    case viperDemo = "VIPERDemo"
 }
 
 /// Storyboarded

@@ -18,6 +18,10 @@ class Architecture: UIViewController, Storyboarded {
         navCoordinator?.openMVP()
     }
     @IBAction func onMVVMClicked(_ sender: UIButton) {
+        navCoordinator?.openLogin()
     }
     
+    @IBAction func onVIPERClicked(_ sender: UIButton) {
+        navCoordinator?.openVIPER()
+    }
 }

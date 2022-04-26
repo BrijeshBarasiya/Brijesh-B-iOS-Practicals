@@ -15,7 +15,6 @@ class MvvmArchitecture: UIViewController, Storyboarded {
     // MARK: - Overirde Function
     override func viewDidLoad() {
         super.viewDidLoad()
-        userImage.layer.cornerRadius = userImage.frame.height * 0.50
         bindData()
     }
 

@@ -16,6 +16,7 @@ class SignUpScreen: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var genderView: UIView!
     @IBOutlet weak var errorMessage: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: Variables
     var isPasswordProgressed: Bool = false
@@ -35,6 +36,7 @@ class SignUpScreen: UIViewController {
         [emailTextField, passwordTextField].forEach { textField in
             textField?.delegate = self
         }
+        scrollView.integrateWithKeyboard()
     }
     
     // MARK: objc Function
@@ -88,6 +90,7 @@ class SignUpScreen: UIViewController {
                 self.signingUpProgressBar.progress = self.signingUpProgressBar.progress + 0.1
                 if self.signingUpProgressBar.progress == 1.0 {
                     timer.invalidate()
+                    
                     self.errorMessage.text = "Thank You For SignUp"
                     self.errorMessage.textColor = UIColor.green
                 }
@@ -133,6 +136,10 @@ class SignUpScreen: UIViewController {
                 formProgressBar.progress -= 0.2
         }
         return result
+    }
+    
+    deinit {
+        scrollView.removeObserver()
     }
     
 }

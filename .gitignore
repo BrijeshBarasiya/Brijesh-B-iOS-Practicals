@@ -30,7 +30,6 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 Pods
-Podfile
 Podfile.lock
 
 ## Playgrounds

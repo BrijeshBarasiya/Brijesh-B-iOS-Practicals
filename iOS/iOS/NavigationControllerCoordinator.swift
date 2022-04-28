@@ -49,5 +49,5 @@ class NavigationControllerCoordinator: Coordinator {
         let architecture = ArchitectureCoordinator(navController)
         architecture.start()
     }
-
+    
 }

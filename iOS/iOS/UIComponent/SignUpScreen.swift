@@ -26,7 +26,7 @@ class SignUpScreen: UIViewController {
     
     // MARK: viewDidLoad
     override func viewDidLoad() {
-        profileImage.layer.cornerRadius = (profileImage.frame.height / 2)
+        profileImage.layer.cornerRadius = 75
         let male = UITapGestureRecognizer(target: self, action: #selector(self.maleRadioButtonChecked))
         maleRadioButton.addGestureRecognizer(male)
         let female = UITapGestureRecognizer(target: self, action: #selector(self.femaleRadioButtonChecked))

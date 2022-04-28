@@ -119,12 +119,12 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-jc-Vgn">
                                                         <rect key="frame" x="52" y="251.33333333333331" width="324" height="140"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-bX-LKY" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="eve.holt@reqres.in" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-bX-LKY" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="324" height="57.333333333333336"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-pN-dhT" customClass="PasswordField" customModule="UIPractice" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="eve.holt@reqres.in" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-pN-dhT" customClass="PasswordField" customModule="UIPractice" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="82.333333333333371" width="324" height="57.666666666666657"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
@@ -198,6 +198,10 @@
                                     <constraint firstAttribute="trailing" secondItem="zSd-IA-C0H" secondAttribute="trailing" id="wzU-0X-ZhK"/>
                                 </constraints>
                             </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="VLx-Qf-ZMX">
+                                <rect key="frame" x="204" y="453" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qYv-q5-nKw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,6 +222,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="IC7-hL-lxO"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="VLx-Qf-ZMX" id="lyw-7D-FbL"/>
                         <outlet property="btnForgotPassword" destination="bLS-FD-KXs" id="cFd-cQ-Cty"/>
                         <outlet property="scrollView" destination="47z-Lw-BrO" id="Pa2-On-ySc"/>
                         <outlet property="txtPassword" destination="KJi-pN-dhT" id="nTG-wZ-Ivb"/>
@@ -345,6 +350,9 @@
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Sign in with Google"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="OnSignUpClicked:" destination="KDs-2j-zN6" eventType="touchUpInside" id="JUF-D0-aoG"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuG-SL-686" customClass="BorderedButton" customModule="UIPractice" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="82.666666666666629" width="324" height="57.333333333333343"/>

@@ -36,5 +36,4 @@ extension UIScrollView {
     func removeObserver() {
         NotificationCenter.default.removeObserver(self)
     }
-    
 }

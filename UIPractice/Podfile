@@ -7,6 +7,8 @@ target 'UIPractice' do
 
   # Pods for UIPractice
   pod 'R.swift'
+  pod 'Alamofire'
+  pod 'Bagel'
 
   target 'UIPracticeTests' do
     inherit! :search_paths

@@ -5,6 +5,7 @@ enum Storyboard: String {
     case authentication = "Authentication"
     case profile = "Profile"
     case onboard = "Onboard"
+    case notification = "Notification"
 }
 
 /// Storyboarded

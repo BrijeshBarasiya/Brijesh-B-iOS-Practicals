@@ -36,6 +36,9 @@ class SignUp: UIViewController, Storyboarded {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func OnSignUpClicked(_ sender: UIButton) {
+        coordinator?.openLocalNotification()
+    }
 }
 
 // MARK: UITextFieldDelegate

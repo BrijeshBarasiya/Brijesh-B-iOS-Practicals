@@ -9,9 +9,18 @@ class NavigationCoordinator: Coordinator {
     }
     
     func start() {
-        let spalshScreen = SpalshScreen.instantiate(from: .onboard)
-        spalshScreen.coordinator = self
-        navController.pushViewController(spalshScreen, animated: true)
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            let signInScreen = SignIn.instantiate(from: .authentication)
+            signInScreen.coordinator = self
+            navController.pushViewController(signInScreen, animated: true)
+        }
+        else {
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            let spalshScreen = SpalshScreen.instantiate(from: .onboard)
+            spalshScreen.coordinator = self
+            navController.pushViewController(spalshScreen, animated: true)
+        }
     }
     
     func openOnboardScreen() {
@@ -36,6 +45,12 @@ class NavigationCoordinator: Coordinator {
     
     func openProfileScreen() {
         let profileScreen = UserProfile.instantiate(from: .profile)
+        profileScreen.coordinator = self
+        navController.pushViewController(profileScreen, animated: true)
+    }
+    
+    func openLocalNotification() {
+        let profileScreen = LocalNotification.instantiate(from: .notification)
         profileScreen.coordinator = self
         navController.pushViewController(profileScreen, animated: true)
     }

@@ -1,6 +1,6 @@
 import UIKit
 
-class CustomPasswordField: CustomInputField {
+class PasswordField: InputField {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

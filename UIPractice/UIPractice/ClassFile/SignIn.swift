@@ -1,12 +1,16 @@
 import UIKit
-class SignIn: UIViewController {
+class SignIn: UIViewController, Storyboarded {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var txtUsername: CustomInputField!
-    @IBOutlet weak var txtPassword: CustomPasswordField!
+    @IBOutlet weak var txtUsername: InputField!
+    @IBOutlet weak var txtPassword: PasswordField!
     @IBOutlet weak var btnForgotPassword: UIButton!
     
-    // MARK: - Override Function
+    // MARK: - Variable
+    var coordinator: NavigationCoordinator?
+    
+    // MARK: - Override Method
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.integrateWithKeyboard()
@@ -17,13 +21,27 @@ class SignIn: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    // MARK: - Object Function
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 
+    // MARK: - IBAction
+    @IBAction func onSignInButtonClicked(_ sender: FilledButton) {
+        coordinator?.openProfileScreen()
+    }
+    
+    @IBAction func onSignupButtonClicked(_ sender: UIButton) {
+        coordinator?.openSignUpScreen()
+    }
+    
 }
 
-// MARK: UITextFieldDelegate
+// MARK: - UITextFieldDelegate
 extension SignIn: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -64,8 +64,8 @@
 		A8DC96A427EDCD0400B5B1C5 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DC96A327EDCD0400B5B1C5 /* UserList.swift */; };
 		A8DC96A627EDCD1400B5B1C5 /* WebServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DC96A527EDCD1400B5B1C5 /* WebServices.storyboard */; };
 		A8DC96A827EDDF9100B5B1C5 /* UserListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DC96A727EDDF9100B5B1C5 /* UserListTableCell.swift */; };
+		A8E6CDA128227FFE0026B889 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6CDA028227FFE0026B889 /* R.generated.swift */; };
 		A8EE0ACB27D1CE3200FAE34E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */; };
-		A8F1464128094902008A200D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1464028094902008A200D /* R.generated.swift */; };
 		A8F14643280949EF008A200D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8F14642280949EF008A200D /* Localizable.strings */; };
 		A8F1464528094ADD008A200D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1464428094ADD008A200D /* Typealiases.swift */; };
 		A8FFE5CF27C5530A0026A197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */; };
@@ -161,8 +161,8 @@
 		A8DC96A327EDCD0400B5B1C5 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		A8DC96A527EDCD1400B5B1C5 /* WebServices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebServices.storyboard; sourceTree = "<group>"; };
 		A8DC96A727EDDF9100B5B1C5 /* UserListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableCell.swift; sourceTree = "<group>"; };
+		A8E6CDA028227FFE0026B889 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A8EE0ACA27D1CE3200FAE34E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
-		A8F1464028094902008A200D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A8F14642280949EF008A200D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A8F1464428094ADD008A200D /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		A8FFE5CB27C5530A0026A197 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,8 +264,8 @@
 				A8FFE5D927C5530B0026A197 /* LaunchScreen.storyboard */,
 				A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */,
 				A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */,
-				A8F1464028094902008A200D /* R.generated.swift */,
 				A8F1464428094ADD008A200D /* Typealiases.swift */,
+				A8E6CDA028227FFE0026B889 /* R.generated.swift */,
 				A8A601F82818F4910064BDCC /* extensionFile.swift */,
 				A8FFE5D727C5530B0026A197 /* Assets.xcassets */,
 				A8FFE5DC27C5530B0026A197 /* Info.plist */,
@@ -826,6 +826,7 @@
 				A80937AE28083DDC00F83CFD /* LoginViewModel.swift in Sources */,
 				A809379E2807DB1900F83CFD /* MvvmModel.swift in Sources */,
 				A87D78B827DF71C7006D1F74 /* AddCountryDetails.swift in Sources */,
+				A8E6CDA128227FFE0026B889 /* R.generated.swift in Sources */,
 				A8DC96A227EDCCC800B5B1C5 /* WebServicesCoordinator.swift in Sources */,
 				A809986427F2F68900D05821 /* AlamofireWebServices.swift in Sources */,
 				A80937AC28083D1D00F83CFD /* MvvmLogin.swift in Sources */,
@@ -860,7 +861,6 @@
 				A806075327E09EE800160523 /* AppCoordinator.swift in Sources */,
 				A80647AB27D776E8007BD792 /* Stepper.swift in Sources */,
 				A8FFE5CF27C5530A0026A197 /* AppDelegate.swift in Sources */,
-				A8F1464128094902008A200D /* R.generated.swift in Sources */,
 				A86504522806A45600BA491F /* MVCController.swift in Sources */,
 				A8F1464528094ADD008A200D /* Typealiases.swift in Sources */,
 				A8D6E218280D2AF600A39ED3 /* Entity.swift in Sources */,

@@ -1,6 +1,6 @@
 import UIKit
 
-class CustomInputField: UITextField {
+class InputField: UITextField {
     
     let textPadding = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     

@@ -41,8 +41,13 @@ class NavigationControllerCoordinator: Coordinator {
     }
     
     func openWebServiceCoordinator() {
-        let firstScreen = WebServicesCoordinator(navController)
-        firstScreen.start()
+        let webService = WebServicesCoordinator(navController)
+        webService.start()
+    }
+    
+    func openArchitectureCoordinator() {
+        let architecture = ArchitectureCoordinator(navController)
+        architecture.start()
     }
 
 }

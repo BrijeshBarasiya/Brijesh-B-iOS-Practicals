@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Architecture-->
+        <scene sceneID="G8b-Ma-JRc">
+            <objects>
+                <viewController storyboardIdentifier="MVPArchitecture" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xum-fa-cOE" customClass="MVPArchitecture" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w1B-s7-2HG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wrI-F7-Jrf">
+                                <rect key="frame" x="117.5" y="295.5" width="179" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wrI-F7-Jrf" secondAttribute="height" id="ig1-Wh-D9s"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-cs-MCf">
+                                <rect key="frame" x="207" y="499.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REM-og-O2D">
+                                <rect key="frame" x="207" y="514.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6Y-h6-plc">
+                                <rect key="frame" x="41.5" y="806" width="331" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Data"/>
+                                <connections>
+                                    <action selector="onGetDataClicked:" destination="xum-fa-cOE" eventType="touchUpInside" id="85C-9V-ors"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1im-H7-PYL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1im-H7-PYL" firstAttribute="bottom" secondItem="N6Y-h6-plc" secondAttribute="bottom" constant="25" id="8vj-Gz-7vk"/>
+                            <constraint firstItem="Ydl-cs-MCf" firstAttribute="top" secondItem="wrI-F7-Jrf" secondAttribute="bottom" constant="25" id="F4I-Qb-6Dj"/>
+                            <constraint firstItem="N6Y-h6-plc" firstAttribute="height" secondItem="w1B-s7-2HG" secondAttribute="height" multiplier="0.0345982" id="Inm-35-RsJ"/>
+                            <constraint firstItem="REM-og-O2D" firstAttribute="top" secondItem="Ydl-cs-MCf" secondAttribute="bottom" constant="15" id="YGT-Mk-6K3"/>
+                            <constraint firstItem="REM-og-O2D" firstAttribute="centerX" secondItem="1im-H7-PYL" secondAttribute="centerX" id="aFm-yf-0y9"/>
+                            <constraint firstItem="wrI-F7-Jrf" firstAttribute="centerY" secondItem="1im-H7-PYL" secondAttribute="centerY" multiplier="0.85" id="bLp-es-rOr"/>
+                            <constraint firstItem="Ydl-cs-MCf" firstAttribute="centerX" secondItem="1im-H7-PYL" secondAttribute="centerX" id="iBs-0O-GNV"/>
+                            <constraint firstItem="wrI-F7-Jrf" firstAttribute="height" secondItem="w1B-s7-2HG" secondAttribute="height" multiplier="0.2" id="jNe-qA-VWx"/>
+                            <constraint firstItem="N6Y-h6-plc" firstAttribute="centerX" secondItem="1im-H7-PYL" secondAttribute="centerX" id="lae-EN-nWj"/>
+                            <constraint firstItem="N6Y-h6-plc" firstAttribute="width" secondItem="w1B-s7-2HG" secondAttribute="width" multiplier="0.8" id="qEl-Wd-tTl"/>
+                            <constraint firstItem="wrI-F7-Jrf" firstAttribute="centerX" secondItem="1im-H7-PYL" secondAttribute="centerX" id="yYF-jm-i5A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userEmail" destination="REM-og-O2D" id="mL8-TZ-ums"/>
+                        <outlet property="userImage" destination="wrI-F7-Jrf" id="i8u-Dp-cId"/>
+                        <outlet property="userName" destination="Ydl-cs-MCf" id="2dQ-WA-sbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8N-kc-vUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

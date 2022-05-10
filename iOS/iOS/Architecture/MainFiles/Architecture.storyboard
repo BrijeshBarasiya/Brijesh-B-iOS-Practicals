@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Architecture-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Architecture" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Architecture" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5me-i6-X41">
+                                <rect key="frame" x="41.5" y="383" width="331" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-Bl-oQd">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="o34-yn-FQI"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="MVC">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" systemColor="linkColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMVCClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="srW-bs-DWS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0O-eC-aE2">
+                                        <rect key="frame" x="0.0" y="50" width="331" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="MVP">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" systemColor="linkColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMVPClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GLV-oW-hFV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c1-kk-Mvk">
+                                        <rect key="frame" x="0.0" y="100" width="331" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="MVVM">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" systemColor="linkColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMVVMClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GRl-TV-dq0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8c1-kk-Mvk" secondAttribute="bottom" id="2tU-NM-4Ge"/>
+                                    <constraint firstItem="i0O-eC-aE2" firstAttribute="top" secondItem="gpr-Bl-oQd" secondAttribute="bottom" constant="10" id="Ajq-z5-oK8"/>
+                                    <constraint firstItem="i0O-eC-aE2" firstAttribute="trailing" secondItem="gpr-Bl-oQd" secondAttribute="trailing" id="Iu6-WA-9yI"/>
+                                    <constraint firstItem="gpr-Bl-oQd" firstAttribute="width" secondItem="5me-i6-X41" secondAttribute="width" id="QnL-R5-7hf"/>
+                                    <constraint firstItem="i0O-eC-aE2" firstAttribute="height" secondItem="gpr-Bl-oQd" secondAttribute="height" id="TyF-SF-2eO"/>
+                                    <constraint firstItem="8c1-kk-Mvk" firstAttribute="top" secondItem="i0O-eC-aE2" secondAttribute="bottom" constant="10" id="VLZ-2s-SOc"/>
+                                    <constraint firstItem="i0O-eC-aE2" firstAttribute="leading" secondItem="gpr-Bl-oQd" secondAttribute="leading" id="YMc-mj-QxX"/>
+                                    <constraint firstItem="8c1-kk-Mvk" firstAttribute="leading" secondItem="i0O-eC-aE2" secondAttribute="leading" id="bfQ-Zx-MjI"/>
+                                    <constraint firstItem="gpr-Bl-oQd" firstAttribute="top" secondItem="5me-i6-X41" secondAttribute="top" id="hut-10-MZs"/>
+                                    <constraint firstItem="8c1-kk-Mvk" firstAttribute="height" secondItem="i0O-eC-aE2" secondAttribute="height" id="im3-JY-0JM"/>
+                                    <constraint firstItem="gpr-Bl-oQd" firstAttribute="centerX" secondItem="5me-i6-X41" secondAttribute="centerX" id="nit-Bx-uLG"/>
+                                    <constraint firstItem="8c1-kk-Mvk" firstAttribute="trailing" secondItem="i0O-eC-aE2" secondAttribute="trailing" id="t4P-DB-PyH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5me-i6-X41" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="QOh-7Q-TJK"/>
+                            <constraint firstItem="5me-i6-X41" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="eNP-po-l3n"/>
+                            <constraint firstItem="5me-i6-X41" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="tw1-de-be4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

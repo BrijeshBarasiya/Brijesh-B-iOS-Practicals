@@ -25,6 +25,16 @@
 		A857543527DB485C008F073D /* demoPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A857543427DB485C008F073D /* demoPDF.pdf */; };
 		A857543927DB4BA0008F073D /* demoHTML.html in Resources */ = {isa = PBXBuildFile; fileRef = A857543827DB4BA0008F073D /* demoHTML.html */; };
 		A857543E27DB4C1D008F073D /* W3.CSS Template_files in Resources */ = {isa = PBXBuildFile; fileRef = A857543D27DB4C1D008F073D /* W3.CSS Template_files */; };
+		A86504492806950300BA491F /* Architecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86504482806950300BA491F /* Architecture.storyboard */; };
+		A865044B2806952200BA491F /* Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865044A2806952200BA491F /* Architecture.swift */; };
+		A865044D2806954C00BA491F /* ArchitectureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865044C2806954C00BA491F /* ArchitectureCoordinator.swift */; };
+		A865045028069F9D00BA491F /* MVCArchitecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A865044F28069F9D00BA491F /* MVCArchitecture.storyboard */; };
+		A86504522806A45600BA491F /* MVCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86504512806A45600BA491F /* MVCController.swift */; };
+		A86504542806A47500BA491F /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86504532806A47500BA491F /* MVCModel.swift */; };
+		A865045A2806C4C700BA491F /* MVPArchitecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86504592806C4C700BA491F /* MVPArchitecture.storyboard */; };
+		A865045C2806C4FA00BA491F /* MVPArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865045B2806C4FA00BA491F /* MVPArchitecture.swift */; };
+		A865045E2806C5D300BA491F /* MVPPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865045D2806C5D300BA491F /* MVPPresentor.swift */; };
+		A86504602806C5E300BA491F /* MVPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A865045F2806C5E300BA491F /* MVPModel.swift */; };
 		A868F36C27F175C300087B89 /* APIDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868F36B27F175C300087B89 /* APIDataClass.swift */; };
 		A8784F8E27CF79E800AF330D /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8784F8D27CF79E800AF330D /* UIComponents.storyboard */; };
 		A87D78B227DF594B006D1F74 /* UINavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87D78B127DF594B006D1F74 /* UINavigationController.storyboard */; };
@@ -93,6 +103,16 @@
 		A857543427DB485C008F073D /* demoPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = demoPDF.pdf; sourceTree = "<group>"; };
 		A857543827DB4BA0008F073D /* demoHTML.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demoHTML.html; sourceTree = "<group>"; };
 		A857543D27DB4C1D008F073D /* W3.CSS Template_files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "W3.CSS Template_files"; sourceTree = "<group>"; };
+		A86504482806950300BA491F /* Architecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Architecture.storyboard; sourceTree = "<group>"; };
+		A865044A2806952200BA491F /* Architecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture.swift; sourceTree = "<group>"; };
+		A865044C2806954C00BA491F /* ArchitectureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureCoordinator.swift; sourceTree = "<group>"; };
+		A865044F28069F9D00BA491F /* MVCArchitecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCArchitecture.storyboard; sourceTree = "<group>"; };
+		A86504512806A45600BA491F /* MVCController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCController.swift; sourceTree = "<group>"; };
+		A86504532806A47500BA491F /* MVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
+		A86504592806C4C700BA491F /* MVPArchitecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPArchitecture.storyboard; sourceTree = "<group>"; };
+		A865045B2806C4FA00BA491F /* MVPArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPArchitecture.swift; sourceTree = "<group>"; };
+		A865045D2806C5D300BA491F /* MVPPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresentor.swift; sourceTree = "<group>"; };
+		A865045F2806C5E300BA491F /* MVPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModel.swift; sourceTree = "<group>"; };
 		A868F36B27F175C300087B89 /* APIDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataClass.swift; sourceTree = "<group>"; };
 		A8784F8D27CF79E800AF330D /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
 		A87D78B127DF594B006D1F74 /* UINavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UINavigationController.storyboard; sourceTree = "<group>"; };
@@ -221,6 +241,95 @@
 			path = demoFiles;
 			sourceTree = "<group>";
 		};
+		A86504432806871F00BA491F /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				A865044E28069E1C00BA491F /* MainFiles */,
+				A86504442806872A00BA491F /* MVC */,
+				A86504552806BFF200BA491F /* MVP */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		A86504442806872A00BA491F /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				A8650445280687FC00BA491F /* Model */,
+				A86504472806882300BA491F /* Controller */,
+				A86504462806880700BA491F /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		A8650445280687FC00BA491F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A86504532806A47500BA491F /* MVCModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A86504462806880700BA491F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A865044F28069F9D00BA491F /* MVCArchitecture.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A86504472806882300BA491F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A86504512806A45600BA491F /* MVCController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A865044E28069E1C00BA491F /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A86504482806950300BA491F /* Architecture.storyboard */,
+				A865044A2806952200BA491F /* Architecture.swift */,
+				A865044C2806954C00BA491F /* ArchitectureCoordinator.swift */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		A86504552806BFF200BA491F /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				A86504562806C00500BA491F /* Model */,
+				A86504582806C0EB00BA491F /* Presenter */,
+				A86504572806C0DA00BA491F /* View */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		A86504562806C00500BA491F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A865045F2806C5E300BA491F /* MVPModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A86504572806C0DA00BA491F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A86504592806C4C700BA491F /* MVPArchitecture.storyboard */,
+				A865045B2806C4FA00BA491F /* MVPArchitecture.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A86504582806C0EB00BA491F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A865045D2806C5D300BA491F /* MVPPresentor.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		A868F36A27F1757900087B89 /* DataClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +398,7 @@
 		A8FFE5CD27C5530A0026A197 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A86504432806871F00BA491F /* Architecture */,
 				A80647A727D72D86007BD792 /* AppFiles */,
 				A806074E27E0723700160523 /* Autolayout */,
 				A80647A627D72616007BD792 /* UIComponent */,
@@ -452,8 +562,11 @@
 				A8784F8E27CF79E800AF330D /* UIComponents.storyboard in Resources */,
 				A8DC96A627EDCD1400B5B1C5 /* WebServices.storyboard in Resources */,
 				A8FFE5DB27C5530B0026A197 /* LaunchScreen.storyboard in Resources */,
+				A865045A2806C4C700BA491F /* MVPArchitecture.storyboard in Resources */,
+				A86504492806950300BA491F /* Architecture.storyboard in Resources */,
 				A857543927DB4BA0008F073D /* demoHTML.html in Resources */,
 				A857543E27DB4C1D008F073D /* W3.CSS Template_files in Resources */,
+				A865045028069F9D00BA491F /* MVCArchitecture.storyboard in Resources */,
 				A857543527DB485C008F073D /* demoPDF.pdf in Resources */,
 				A8FFE5D827C5530B0026A197 /* Assets.xcassets in Resources */,
 				A87D78B227DF594B006D1F74 /* UINavigationController.storyboard in Resources */,
@@ -585,7 +698,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86504542806A47500BA491F /* MVCModel.swift in Sources */,
 				A87D78B627DF6236006D1F74 /* SecondViewController.swift in Sources */,
+				A865044D2806954C00BA491F /* ArchitectureCoordinator.swift in Sources */,
 				A806075627E0A19600160523 /* NavigationControllerCoordinator.swift in Sources */,
 				A809986627F31A0000D05821 /* WebService.swift in Sources */,
 				A87D78B827DF71C7006D1F74 /* AddCountryDetails.swift in Sources */,
@@ -603,15 +718,20 @@
 				A888CB1127E20AA50023B9B6 /* StoryBoarded.swift in Sources */,
 				A8BFC77C27E1AB6A00F1E0EC /* ThirdViewController.swift in Sources */,
 				A85016E927DA0DCD0020ED53 /* Pickers.swift in Sources */,
+				A865045C2806C4FA00BA491F /* MVPArchitecture.swift in Sources */,
 				A87D78B427DF5A78006D1F74 /* NavigationController.swift in Sources */,
 				A80A77F327DB305300BBB9FD /* WebViewKit.swift in Sources */,
+				A865044B2806952200BA491F /* Architecture.swift in Sources */,
 				A80647A927D73905007BD792 /* MapClass.swift in Sources */,
 				A8FFE5D327C5530A0026A197 /* ViewController.swift in Sources */,
 				A89754E227D09CF9001ABB33 /* Practical1.swift in Sources */,
+				A86504602806C5E300BA491F /* MVPModel.swift in Sources */,
 				A806075327E09EE800160523 /* AppCoordinator.swift in Sources */,
 				A80647AB27D776E8007BD792 /* Stepper.swift in Sources */,
 				A8FFE5CF27C5530A0026A197 /* AppDelegate.swift in Sources */,
+				A86504522806A45600BA491F /* MVCController.swift in Sources */,
 				A8FFE5D127C5530A0026A197 /* SceneDelegate.swift in Sources */,
+				A865045E2806C5D300BA491F /* MVPPresentor.swift in Sources */,
 				A868F36C27F175C300087B89 /* APIDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

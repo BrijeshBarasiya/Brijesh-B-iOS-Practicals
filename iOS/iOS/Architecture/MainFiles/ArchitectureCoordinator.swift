@@ -29,4 +29,24 @@ class ArchitectureCoordinator: Coordinator {
         navController.pushViewController(mvp, animated: false)
     }
     
+    // MARK: - openMVP Functions
+    func openLogin() {
+        let mvvmLogin = MvvmLogin.instantiate(from: .mvvmArchitecture)
+        mvvmLogin.navCoordinator = self
+        navController.pushViewController(mvvmLogin, animated: false)
+    }
+    
+    // MARK: - openMVP Functions
+    func openMVVM() {
+        let mvvm = MvvmArchitecture.instantiate(from: .mvvmArchitecture)
+        mvvm.navCoordinator = self
+        navController.pushViewController(mvvm, animated: false)
+    }
+    
+    // MARK: - openVIPER Functions
+    func openVIPER() {
+        let viperDemo = Router(navController)
+        viperDemo.start()
+    }
+    
 }

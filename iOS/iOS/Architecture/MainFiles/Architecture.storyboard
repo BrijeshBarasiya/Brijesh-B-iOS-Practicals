@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5me-i6-X41">
-                                <rect key="frame" x="41.5" y="383" width="331" height="140"/>
+                                <rect key="frame" x="41.5" y="358" width="331" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-Bl-oQd">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="40"/>
@@ -58,20 +58,36 @@
                                             <action selector="onMVVMClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GRl-TV-dq0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G5-Jh-2wL">
+                                        <rect key="frame" x="0.0" y="150" width="331" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VIPER">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" systemColor="linkColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onVIPERClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Sxr-bW-OsZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="8c1-kk-Mvk" secondAttribute="bottom" id="2tU-NM-4Ge"/>
                                     <constraint firstItem="i0O-eC-aE2" firstAttribute="top" secondItem="gpr-Bl-oQd" secondAttribute="bottom" constant="10" id="Ajq-z5-oK8"/>
+                                    <constraint firstAttribute="bottom" secondItem="7G5-Jh-2wL" secondAttribute="bottom" id="Ak9-78-wog"/>
                                     <constraint firstItem="i0O-eC-aE2" firstAttribute="trailing" secondItem="gpr-Bl-oQd" secondAttribute="trailing" id="Iu6-WA-9yI"/>
                                     <constraint firstItem="gpr-Bl-oQd" firstAttribute="width" secondItem="5me-i6-X41" secondAttribute="width" id="QnL-R5-7hf"/>
+                                    <constraint firstItem="7G5-Jh-2wL" firstAttribute="top" secondItem="8c1-kk-Mvk" secondAttribute="bottom" constant="10" id="Qu6-6r-C6V"/>
                                     <constraint firstItem="i0O-eC-aE2" firstAttribute="height" secondItem="gpr-Bl-oQd" secondAttribute="height" id="TyF-SF-2eO"/>
                                     <constraint firstItem="8c1-kk-Mvk" firstAttribute="top" secondItem="i0O-eC-aE2" secondAttribute="bottom" constant="10" id="VLZ-2s-SOc"/>
+                                    <constraint firstItem="7G5-Jh-2wL" firstAttribute="height" secondItem="8c1-kk-Mvk" secondAttribute="height" id="Wfh-Gp-1xN"/>
                                     <constraint firstItem="i0O-eC-aE2" firstAttribute="leading" secondItem="gpr-Bl-oQd" secondAttribute="leading" id="YMc-mj-QxX"/>
+                                    <constraint firstItem="7G5-Jh-2wL" firstAttribute="leading" secondItem="8c1-kk-Mvk" secondAttribute="leading" id="Zj8-2f-ZAp"/>
                                     <constraint firstItem="8c1-kk-Mvk" firstAttribute="leading" secondItem="i0O-eC-aE2" secondAttribute="leading" id="bfQ-Zx-MjI"/>
                                     <constraint firstItem="gpr-Bl-oQd" firstAttribute="top" secondItem="5me-i6-X41" secondAttribute="top" id="hut-10-MZs"/>
                                     <constraint firstItem="8c1-kk-Mvk" firstAttribute="height" secondItem="i0O-eC-aE2" secondAttribute="height" id="im3-JY-0JM"/>
                                     <constraint firstItem="gpr-Bl-oQd" firstAttribute="centerX" secondItem="5me-i6-X41" secondAttribute="centerX" id="nit-Bx-uLG"/>
                                     <constraint firstItem="8c1-kk-Mvk" firstAttribute="trailing" secondItem="i0O-eC-aE2" secondAttribute="trailing" id="t4P-DB-PyH"/>
+                                    <constraint firstItem="7G5-Jh-2wL" firstAttribute="trailing" secondItem="8c1-kk-Mvk" secondAttribute="trailing" id="twc-KF-vCM"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -14,6 +14,11 @@ class MvvmLogin: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindData()
+        let keyboardEvent = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(keyboardEvent)
+        [username, password].forEach { textField in
+            textField?.delegate = self
+        }
     }
     
     // MARK: - IBAction
@@ -35,6 +40,24 @@ class MvvmLogin: UIViewController, Storyboarded {
                 print("Password is Empty")
             }
         }
+    }
+    
+}
+
+// MARK: UITextFieldDelegate
+extension MvvmLogin: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case username:
+            username.resignFirstResponder()
+            password.becomeFirstResponder()
+        case password:
+            password.resignFirstResponder()
+        default:
+            break
+        }
+        return true
     }
     
 }

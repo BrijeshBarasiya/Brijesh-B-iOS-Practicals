@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDq-HS-HVl">
-                                <rect key="frame" x="62" y="426" width="290" height="54"/>
+                                <rect key="frame" x="62" y="424" width="290" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -43,7 +43,7 @@
                             <constraint firstItem="mDq-HS-HVl" firstAttribute="width" secondItem="NMf-YJ-CRh" secondAttribute="width" multiplier="0.7" id="FiC-Rn-wgH"/>
                             <constraint firstItem="mDq-HS-HVl" firstAttribute="centerY" secondItem="UKw-u3-pe4" secondAttribute="centerY" id="NJ1-hu-eOA"/>
                             <constraint firstItem="mDq-HS-HVl" firstAttribute="centerX" secondItem="UKw-u3-pe4" secondAttribute="centerX" id="PU2-38-4VK"/>
-                            <constraint firstItem="mDq-HS-HVl" firstAttribute="height" secondItem="NMf-YJ-CRh" secondAttribute="height" multiplier="0.06" id="w0E-MA-VT9"/>
+                            <constraint firstItem="mDq-HS-HVl" firstAttribute="height" relation="greaterThanOrEqual" secondItem="NMf-YJ-CRh" secondAttribute="height" multiplier="0.02" constant="40" id="w0E-MA-VT9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hiN-rW-b52"/>
@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-LQ-mEd">
-                                <rect key="frame" x="62" y="426" width="290" height="54"/>
+                                <rect key="frame" x="62" y="424" width="290" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -75,7 +75,7 @@
                             <constraint firstItem="H2K-LQ-mEd" firstAttribute="width" secondItem="79K-XK-Yy1" secondAttribute="width" multiplier="0.700483" id="3pM-Os-HKF"/>
                             <constraint firstItem="H2K-LQ-mEd" firstAttribute="centerX" secondItem="Oca-OB-NUO" secondAttribute="centerX" id="QKZ-Jf-j1L"/>
                             <constraint firstItem="H2K-LQ-mEd" firstAttribute="centerY" secondItem="Oca-OB-NUO" secondAttribute="centerY" id="YHf-09-AkL"/>
-                            <constraint firstItem="H2K-LQ-mEd" firstAttribute="height" secondItem="79K-XK-Yy1" secondAttribute="height" multiplier="0.0602679" id="cgZ-Wb-ZKK"/>
+                            <constraint firstItem="H2K-LQ-mEd" firstAttribute="height" relation="greaterThanOrEqual" secondItem="79K-XK-Yy1" secondAttribute="height" multiplier="0.02" constant="40" id="cgZ-Wb-ZKK"/>
                         </constraints>
                     </view>
                     <connections>

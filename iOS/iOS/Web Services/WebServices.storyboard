@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-hS-GLM">
-                                <rect key="frame" x="41.5" y="399" width="331" height="44.5"/>
+                                <rect key="frame" x="41.5" y="392.5" width="331" height="58"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Using URLSession">
                                     <backgroundConfiguration key="background">
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aL-dc-WIh">
-                                <rect key="frame" x="41.5" y="463.5" width="331" height="45"/>
+                                <rect key="frame" x="41.5" y="470.5" width="331" height="57.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Using Alamofire">
                                     <backgroundConfiguration key="background">
@@ -47,7 +47,7 @@
                             <constraint firstItem="1aL-dc-WIh" firstAttribute="top" secondItem="dWJ-hS-GLM" secondAttribute="bottom" constant="20" id="8Jp-r0-9Fw"/>
                             <constraint firstItem="dWJ-hS-GLM" firstAttribute="centerY" secondItem="miw-0x-Cd9" secondAttribute="centerY" multiplier="0.93" id="Abw-oc-oMY"/>
                             <constraint firstItem="1aL-dc-WIh" firstAttribute="height" secondItem="dWJ-hS-GLM" secondAttribute="height" id="E1w-zc-qlw"/>
-                            <constraint firstItem="dWJ-hS-GLM" firstAttribute="height" secondItem="coU-cU-z0n" secondAttribute="height" multiplier="0.05" id="Tfa-cr-L6Z"/>
+                            <constraint firstItem="dWJ-hS-GLM" firstAttribute="height" relation="greaterThanOrEqual" secondItem="coU-cU-z0n" secondAttribute="height" multiplier="0.02" constant="40" id="Tfa-cr-L6Z"/>
                             <constraint firstItem="dWJ-hS-GLM" firstAttribute="width" secondItem="coU-cU-z0n" secondAttribute="width" multiplier="0.8" id="XNU-0j-LPW"/>
                             <constraint firstItem="dWJ-hS-GLM" firstAttribute="centerX" secondItem="miw-0x-Cd9" secondAttribute="centerX" id="dOY-i5-G6n"/>
                             <constraint firstItem="1aL-dc-WIh" firstAttribute="leading" secondItem="dWJ-hS-GLM" secondAttribute="leading" id="qyL-Lc-vNH"/>
@@ -85,7 +85,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-Xp-YzL">
-                                                    <rect key="frame" x="150.5" y="37" width="253.5" height="60"/>
+                                                    <rect key="frame" x="150.5" y="33" width="253.5" height="68"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brijesh Barasiya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ0-H9-NL8">
                                                             <rect key="frame" x="0.0" y="10" width="139" height="24"/>
@@ -94,7 +94,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brijeshbarasiya44@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P6-wD-JTd">
-                                                            <rect key="frame" x="0.0" y="33" width="195" height="17"/>
+                                                            <rect key="frame" x="0.0" y="41" width="195" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" systemColor="systemTealColor"/>
                                                             <nil key="highlightedColor"/>
@@ -105,12 +105,12 @@
                                                         <constraint firstAttribute="bottom" secondItem="7P6-wD-JTd" secondAttribute="bottom" constant="10" id="BLV-hd-cuP"/>
                                                         <constraint firstItem="EJ0-H9-NL8" firstAttribute="top" secondItem="FRc-Xp-YzL" secondAttribute="top" constant="10" id="Unb-Ub-WN5"/>
                                                         <constraint firstItem="7P6-wD-JTd" firstAttribute="leading" secondItem="FRc-Xp-YzL" secondAttribute="leading" id="Y5E-Rx-yPL"/>
+                                                        <constraint firstItem="7P6-wD-JTd" firstAttribute="top" secondItem="EJ0-H9-NL8" secondAttribute="bottom" multiplier="1.2" id="jln-5G-1Ue"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="FRc-Xp-YzL" secondAttribute="trailing" constant="10" id="CX1-SK-pXp"/>
-                                                <constraint firstItem="FRc-Xp-YzL" firstAttribute="height" secondItem="O1d-TQ-CWY" secondAttribute="height" multiplier="0.5" id="MZ1-vB-OsH"/>
                                                 <constraint firstItem="FRc-Xp-YzL" firstAttribute="leading" secondItem="O1d-TQ-CWY" secondAttribute="trailing" constant="10" id="Pmx-I9-TYa"/>
                                                 <constraint firstItem="O1d-TQ-CWY" firstAttribute="centerY" secondItem="jH6-Gm-m6l" secondAttribute="centerY" id="U65-I0-5Ei"/>
                                                 <constraint firstItem="FRc-Xp-YzL" firstAttribute="centerY" secondItem="O1d-TQ-CWY" secondAttribute="centerY" id="rNd-rh-5sC"/>

@@ -51,6 +51,8 @@
 		A87D78B827DF71C7006D1F74 /* AddCountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D78B727DF71C7006D1F74 /* AddCountryDetails.swift */; };
 		A888CB1127E20AA50023B9B6 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888CB1027E20AA50023B9B6 /* StoryBoarded.swift */; };
 		A89754E227D09CF9001ABB33 /* Practical1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89754E127D09CF9001ABB33 /* Practical1.swift */; };
+		A8A601F92818F4910064BDCC /* extensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A601F82818F4910064BDCC /* extensionFile.swift */; };
+		A8A601FB28194F9E0064BDCC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A601FA28194F9E0064BDCC /* LoginScreen.swift */; };
 		A8BFC77C27E1AB6A00F1E0EC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFC77B27E1AB6A00F1E0EC /* ThirdViewController.swift */; };
 		A8D6E20E280D279B00A39ED3 /* VIPERDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D6E20D280D279B00A39ED3 /* VIPERDemo.storyboard */; };
 		A8D6E210280D27BD00A39ED3 /* VIPERDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6E20F280D27BD00A39ED3 /* VIPERDemo.swift */; };
@@ -146,6 +148,8 @@
 		A87D78B727DF71C7006D1F74 /* AddCountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountryDetails.swift; sourceTree = "<group>"; };
 		A888CB1027E20AA50023B9B6 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
 		A89754E127D09CF9001ABB33 /* Practical1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practical1.swift; sourceTree = "<group>"; };
+		A8A601F82818F4910064BDCC /* extensionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionFile.swift; sourceTree = "<group>"; };
+		A8A601FA28194F9E0064BDCC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		A8BFC77B27E1AB6A00F1E0EC /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A8D6E20D280D279B00A39ED3 /* VIPERDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VIPERDemo.storyboard; sourceTree = "<group>"; };
 		A8D6E20F280D27BD00A39ED3 /* VIPERDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERDemo.swift; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 				A80647AA27D776E8007BD792 /* Stepper.swift */,
 				A85016E827DA0DCD0020ED53 /* Pickers.swift */,
 				A80A77F227DB305300BBB9FD /* WebViewKit.swift */,
+				A8A601FA28194F9E0064BDCC /* LoginScreen.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -256,14 +261,15 @@
 			isa = PBXGroup;
 			children = (
 				A857543C27DB4BEE008F073D /* demoFiles */,
+				A8FFE5D927C5530B0026A197 /* LaunchScreen.storyboard */,
 				A8FFE5CE27C5530A0026A197 /* AppDelegate.swift */,
 				A8FFE5D027C5530A0026A197 /* SceneDelegate.swift */,
-				A8FFE5D727C5530B0026A197 /* Assets.xcassets */,
-				A8FFE5D927C5530B0026A197 /* LaunchScreen.storyboard */,
-				A8FFE5DC27C5530B0026A197 /* Info.plist */,
 				A8F1464028094902008A200D /* R.generated.swift */,
-				A8F14642280949EF008A200D /* Localizable.strings */,
 				A8F1464428094ADD008A200D /* Typealiases.swift */,
+				A8A601F82818F4910064BDCC /* extensionFile.swift */,
+				A8FFE5D727C5530B0026A197 /* Assets.xcassets */,
+				A8FFE5DC27C5530B0026A197 /* Info.plist */,
+				A8F14642280949EF008A200D /* Localizable.strings */,
 			);
 			name = AppFiles;
 			sourceTree = "<group>";
@@ -834,6 +840,7 @@
 				A83F73ED27DF00D00055F05B /* CollectionViewHeaderCell.swift in Sources */,
 				A855C16F27D8857D008C33E1 /* CollectonView.swift in Sources */,
 				A80647A427D71E52007BD792 /* DataClass.swift in Sources */,
+				A8A601FB28194F9E0064BDCC /* LoginScreen.swift in Sources */,
 				A888CB1127E20AA50023B9B6 /* StoryBoarded.swift in Sources */,
 				A8BFC77C27E1AB6A00F1E0EC /* ThirdViewController.swift in Sources */,
 				A80937A9280822F000F83CFD /* Dynamic.swift in Sources */,
@@ -848,6 +855,7 @@
 				A8FFE5D327C5530A0026A197 /* ViewController.swift in Sources */,
 				A89754E227D09CF9001ABB33 /* Practical1.swift in Sources */,
 				A86504602806C5E300BA491F /* MVPModel.swift in Sources */,
+				A8A601F92818F4910064BDCC /* extensionFile.swift in Sources */,
 				A80937A42807DB4400F83CFD /* MvvmArchitecture.swift in Sources */,
 				A806075327E09EE800160523 /* AppCoordinator.swift in Sources */,
 				A80647AB27D776E8007BD792 /* Stepper.swift in Sources */,

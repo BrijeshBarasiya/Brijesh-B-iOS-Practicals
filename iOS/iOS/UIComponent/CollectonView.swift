@@ -148,8 +148,8 @@ extension CollectionView: UITableViewDataSource {
 extension CollectionView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = view.frame.width * 0.28
-        return CGSize(width: size, height: size * 1.25)
+        let size = view.frame.width * 0.26
+        return CGSize(width: size, height: size * 1.30)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

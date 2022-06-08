@@ -47,11 +47,15 @@ class Pickers: UIViewController {
     // MARK: Functions
     func openManualDatePicker() {
         let size = view.frame.size
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height * 0.05))
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: size.width, height: 30))
         let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(self.onClickCancelButton))
         let okButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.onClickOkButton))
         toolbar.setItems([cancelButton, okButton], animated: true)
         manualDatePicker.datePickerMode = .date
+        manualDatePicker.minimumDate = Date()
+        var dayComponent = DateComponents()
+        dayComponent.day = 10
+        manualDatePicker.maximumDate = Calendar.current.date(byAdding: dayComponent, to: Date())
         manualDatePicker.preferredDatePickerStyle = .wheels
         selectDate.inputView = manualDatePicker
         selectDate.inputAccessoryView = toolbar

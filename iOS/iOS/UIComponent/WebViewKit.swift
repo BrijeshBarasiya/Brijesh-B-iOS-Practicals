@@ -17,13 +17,22 @@ class WebViewKit: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         serachBar.delegate = self
-        var path = Bundle.main.path(forResource: "demoPDF", ofType: "pdf")
-        var url = URL(fileURLWithPath: path ?? "demoPDF")
-        var requestpath = URLRequest(url: url)
+        loadPdf()
+        loadHtml()
+    }
+    
+    private func loadPdf() {
+        pdfWebView.isUserInteractionEnabled = true
+        let path = Bundle.main.path(forResource: "demoPDF", ofType: "pdf")
+        let url = URL(fileURLWithPath: path ?? "demoPDF")
+        let requestpath = URLRequest(url: url)
         pdfWebView.load(requestpath)
-        path = Bundle.main.path(forResource: "demoHTML", ofType: "html")
-        url = URL(fileURLWithPath: path ?? "demoHTML")
-        requestpath = URLRequest(url: url)
+    }
+    
+    private func loadHtml() {
+        let path = Bundle.main.path(forResource: "demoHTML", ofType: "html")
+        let url = URL(fileURLWithPath: path ?? "demoHTML")
+        let requestpath = URLRequest(url: url)
         htmlWebView.load(requestpath)
     }
     

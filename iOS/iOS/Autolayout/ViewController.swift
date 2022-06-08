@@ -31,4 +31,5 @@ class ViewController: UIViewController {
     @IBAction func onArchitectureClicked(_ sender: UIButton) {
         navCoordinator?.openArchitectureCoordinator()
     }
+    
 }

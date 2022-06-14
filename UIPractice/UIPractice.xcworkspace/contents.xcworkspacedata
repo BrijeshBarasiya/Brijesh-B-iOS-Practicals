@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIPractice/ClassFile/CoreData/UsersData+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:UIPractice/ClassFile/CoreData/UsersData+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:UIPractice.xcodeproj">
    </FileRef>
    <FileRef

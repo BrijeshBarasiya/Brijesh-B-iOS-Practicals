@@ -6,6 +6,7 @@ class SignIn: BaseViewController<NavigationCoordinator, AuthenticationViewModel>
     @IBOutlet weak var txtUsername: InputField!
     @IBOutlet weak var txtPassword: PasswordField!
     @IBOutlet weak var btnForgotPassword: UIButton!
+    @IBOutlet weak var btnSignIn: FilledButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // MARK: - Override Method
@@ -30,17 +31,24 @@ class SignIn: BaseViewController<NavigationCoordinator, AuthenticationViewModel>
             self?.coordinator?.openProfileScreen()
         }
         viewModel.failureMessage.bind{error in
-            print(error ?? "Sorry123")
+            print(error ?? "Error")
         }
-        viewModel.isLoading.bind{[weak self]visibility in
+        viewModel.isLoading.bind{[weak self] visibility in
             self?.activityIndicator.isHidden = !visibility
+            self?.btnSignIn.isUserInteractionEnabled = !visibility
             visibility ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
+        }
+        viewModel.userDataCore.bind{[weak self] data in         
+            self?.coordinator?.openProfileScreen()
         }
     }
 
     // MARK: - IBAction
     @IBAction func onSignInButtonClicked(_ sender: FilledButton) {
-        viewModel.isUserExist(email: txtUsername.text ?? "email", password: txtPassword.text ?? "password")
+        guard let email = txtUsername.text else { return }
+        guard let password = txtPassword.text else { return }
+        //viewModel.isUserExist(email: email, password: password)
+        viewModel.isUserExistCore(email: email, password: password)
     }
 
     @IBAction func onSignupButtonClicked(_ sender: UIButton) {

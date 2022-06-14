@@ -224,6 +224,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="VLx-Qf-ZMX" id="lyw-7D-FbL"/>
                         <outlet property="btnForgotPassword" destination="bLS-FD-KXs" id="cFd-cQ-Cty"/>
+                        <outlet property="btnSignIn" destination="5vF-yY-tYX" id="gSS-jr-Lh8"/>
                         <outlet property="scrollView" destination="47z-Lw-BrO" id="Pa2-On-ySc"/>
                         <outlet property="txtPassword" destination="KJi-pN-dhT" id="nTG-wZ-Ivb"/>
                         <outlet property="txtUsername" destination="feJ-bX-LKY" id="TOz-x1-xbs"/>
@@ -292,6 +293,9 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Sign Up"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onSignUpClicked:" destination="KDs-2j-zN6" eventType="touchUpInside" id="vdz-9B-8AK"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tym-TT-APw" customClass="LeftTitle" customModule="UIPractice" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="37.333333333333329" width="428" height="42"/>

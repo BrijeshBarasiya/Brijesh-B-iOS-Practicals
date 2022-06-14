@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -157,10 +158,128 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="208.25892857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ZPQ-8h-nO6">
+            <objects>
+                <viewController id="QgD-BY-zHP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0np-wO-MVi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nO1-Z7-QQC">
+                                <rect key="frame" x="41.5" y="272.5" width="331" height="361"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eKZ-za-4z3">
+                                        <rect key="frame" x="24.5" y="25" width="282" height="311"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lJ-vd-RV9" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="54"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k22-Ho-DgE" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="64" width="282" height="54.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCG-gp-WKb" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="128.5" width="282" height="54"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USq-wk-scK" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="192.5" width="282" height="54.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6P-xV-L2V" customClass="FilledButton" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="257" width="282" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Done"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eKZ-za-4z3" secondAttribute="bottom" constant="25" id="8cP-ng-x45"/>
+                                    <constraint firstItem="eKZ-za-4z3" firstAttribute="width" secondItem="nO1-Z7-QQC" secondAttribute="width" multiplier="0.85" id="MIl-Uw-7HC"/>
+                                    <constraint firstItem="eKZ-za-4z3" firstAttribute="top" secondItem="nO1-Z7-QQC" secondAttribute="top" constant="25" id="nsq-t8-fjA"/>
+                                    <constraint firstItem="eKZ-za-4z3" firstAttribute="centerX" secondItem="nO1-Z7-QQC" secondAttribute="centerX" id="om2-TU-FLj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b9y-tJ-9g2"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nO1-Z7-QQC" firstAttribute="height" secondItem="0np-wO-MVi" secondAttribute="height" multiplier="0.001" constant="360" id="Pgl-me-0wj"/>
+                            <constraint firstItem="nO1-Z7-QQC" firstAttribute="width" secondItem="0np-wO-MVi" secondAttribute="width" multiplier="0.8" id="e2c-cc-zfF"/>
+                            <constraint firstItem="nO1-Z7-QQC" firstAttribute="centerX" secondItem="b9y-tJ-9g2" secondAttribute="centerX" id="hxT-IO-phb"/>
+                            <constraint firstItem="nO1-Z7-QQC" firstAttribute="centerY" secondItem="b9y-tJ-9g2" secondAttribute="centerY" id="zpG-fQ-qsq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="skr-vE-90y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="208"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5zb-Ti-s2R">
+            <objects>
+                <viewController id="2Ap-KT-eWS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5L5-mD-hCv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-Q6-3BV">
+                                <rect key="frame" x="41.5" y="362.5" width="331" height="181"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-Gb-bkq">
+                                        <rect key="frame" x="24.5" y="25" width="282" height="131"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-t5-fGP" customClass="InputField" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="60.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKo-T8-ycF" customClass="FilledButton" customModule="UIPractice" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="70.5" width="282" height="60.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Done"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Color"/>
+                                <constraints>
+                                    <constraint firstItem="gQX-Gb-bkq" firstAttribute="top" secondItem="YWC-Q6-3BV" secondAttribute="top" constant="25" id="Uwj-5g-MVd"/>
+                                    <constraint firstItem="gQX-Gb-bkq" firstAttribute="centerX" secondItem="YWC-Q6-3BV" secondAttribute="centerX" id="lHU-x0-5l0"/>
+                                    <constraint firstAttribute="bottom" secondItem="gQX-Gb-bkq" secondAttribute="bottom" constant="25" id="q5b-B7-gOG"/>
+                                    <constraint firstItem="gQX-Gb-bkq" firstAttribute="width" secondItem="YWC-Q6-3BV" secondAttribute="width" multiplier="0.85" id="qVs-vf-gwv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fFw-7i-lg3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YWC-Q6-3BV" firstAttribute="centerX" secondItem="fFw-7i-lg3" secondAttribute="centerX" id="85b-Wr-bhQ"/>
+                            <constraint firstItem="YWC-Q6-3BV" firstAttribute="centerY" secondItem="fFw-7i-lg3" secondAttribute="centerY" id="Ezp-jX-0l8"/>
+                            <constraint firstItem="YWC-Q6-3BV" firstAttribute="width" secondItem="5L5-mD-hCv" secondAttribute="width" multiplier="0.8" id="SSw-LD-uQD"/>
+                            <constraint firstItem="YWC-Q6-3BV" firstAttribute="height" secondItem="5L5-mD-hCv" secondAttribute="height" multiplier="0.001" constant="180" id="oSe-4b-m1a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZh-ip-3Ce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2359" y="208"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AddImage" width="160" height="159"/>
         <image name="location" catalog="system" width="128" height="118"/>
+        <namedColor name="Color">
+            <color red="0.70300000905990601" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

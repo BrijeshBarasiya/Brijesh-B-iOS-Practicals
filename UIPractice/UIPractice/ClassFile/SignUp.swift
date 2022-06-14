@@ -32,6 +32,18 @@ class SignUp: UIViewController, Storyboarded {
     }
 
     // MARK: - IBAction
+    @IBAction func onSignUpClicked(_ sender: UIButton) {
+        guard let email = txtEmail.text else { return }
+        guard let username = txtUsername.text else { return }
+        guard let password = txtPassword.text else { return }
+        if((txtEmail.text?.isEmpty != true) && (txtPassword.text?.isEmpty != true) && (txtUsername.text?.isEmpty != true)) {
+            let userData = ["email": email, "username": username, "password": password]
+            CoreHelper.shared.saveData(data: userData)
+        } else {
+            print("Something is Missing...")
+        }
+    }
+    
     @IBAction func onSigninButtonClicked(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
@@ -39,6 +51,7 @@ class SignUp: UIViewController, Storyboarded {
     @IBAction func OnSignUpClicked(_ sender: UIButton) {
         coordinator?.openLocalNotification()
     }
+    
 }
 
 // MARK: UITextFieldDelegate
